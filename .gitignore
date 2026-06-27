@@ -7,3 +7,4 @@ final/
 img/
 *.lyrdb
 .ipynb_checkpoints/
+makerchip-env/
