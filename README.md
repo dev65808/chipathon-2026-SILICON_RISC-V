@@ -1,3 +1,9 @@
+# Chipathon 2026 Team A30 SILICON_RISC-V 
+
+- **Project Title**: 32-bit RISC-V (RV32I) microcontroller using TL-Verilog and Librelane-ORFS Flow
+- **Project Description**:The project aims to design and implement a basic 32-bit RISC-V processor compliant with the RV32I base instruction set. TL-Verilog (TLV) will be the main design language, enabling transaction-level modeling and timing abstraction for faster development and better architectural insight. TLV descriptions will be translated into SystemVerilog using Sandpiper. A simple APB bus will connect to external serial memory and integrate an on-chip ADC and DAC, forming a minimal microcontroller platform.
+
+
 # chipathon-2026-gf180mcu-padring
 
 Chipathon 2026 workshop fork of the wafer-space `gf180mcu-project-template`.
