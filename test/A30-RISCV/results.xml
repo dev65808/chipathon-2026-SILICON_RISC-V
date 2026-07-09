@@ -1,0 +1,16 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1783621697" />
+    <testcase name="test_reset_init" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="102" time="0.005344390869140625" sim_time_ns="110.0" ratio_time="20582.326909350464" />
+    <testcase name="test_instr_fetch_word" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="115" time="0.00418853759765625" sim_time_ns="549.999" ratio_time="131310.50806557378" />
+    <testcase name="test_instr_fetch_offset" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="131" time="0.004236459732055664" sim_time_ns="549.999" ratio_time="129825.14523586021" />
+    <testcase name="test_data_read_word" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="147" time="0.006844282150268555" sim_time_ns="899.999" ratio_time="131496.47840930783" />
+    <testcase name="test_data_write_word" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="165" time="0.007002353668212891" sim_time_ns="899.9989999999998" ratio_time="128528.06965257062" />
+    <testcase name="test_data_read_psram_b" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="182" time="0.006930112838745117" sim_time_ns="899.9989999999998" ratio_time="129867.8709772594" />
+    <testcase name="test_data_write_psram_b" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="199" time="0.0070362091064453125" sim_time_ns="899.9989999999998" ratio_time="127909.64372783949" />
+    <testcase name="test_byte_write_strobe" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="216" time="0.007781982421875" sim_time_ns="1009.9989999999998" ratio_time="129786.85189019605" />
+    <testcase name="test_halfword_write" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="242" time="0.005666494369506836" sim_time_ns="739.9989999999998" ratio_time="130592.02952396176" />
+    <testcase name="test_back_to_back" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="263" time="0.007263660430908203" sim_time_ns="979.9989999999998" ratio_time="134918.06360191686" />
+    <testcase name="test_data_then_instr" classname="test_rv32i_qspi" file="/foss/designs/work/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/test_rv32i_qspi.py" lineno="277" time="0.006917476654052734" sim_time_ns="899.9989999999998" ratio_time="130105.10118205001" />
+  </testsuite>
+</testsuites>
