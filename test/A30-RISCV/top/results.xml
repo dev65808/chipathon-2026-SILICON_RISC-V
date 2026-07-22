@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1784708427" />
+    <testcase name="test_core_addi_lui_sw_lw_bge" classname="test_top" file="/foss/designs/work/A30-RISCV/chipathon-2026-SILICON_RISC-V/test/A30-RISCV/top/test_top.py" lineno="8" time="0.051011085510253906" sim_time_ns="3200.0" ratio_time="62731.462543700574" />
+  </testsuite>
+</testsuites>
