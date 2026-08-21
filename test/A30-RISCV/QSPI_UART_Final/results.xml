@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1785553839" />
+    <testcase name="test_core_full_uart_qspi" classname="test_top_full" file="/Users/KGD/Documents/KGD/Vani/PHD/Chipathon/QSPI_UART_Final/test_top_full.py" lineno="54" time="0.8661007881164551" sim_time_ns="193590.0" ratio_time="223519.020714677" />
+  </testsuite>
+</testsuites>
