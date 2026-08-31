@@ -1,0 +1,391 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN A30_A ;
+UNITS DISTANCE MICRONS 200 ;
+DIEAREA ( 0 0 ) ( 222000 222000 ) ;
+PINS 124 ;
+- VSS + NET VSS + DIRECTION INOUT + USE GROUND
+  + LAYER Metal2 ( 0 13828 ) ( 200 15728 )
+  + LAYER Metal2 ( 0 11198 ) ( 200 13248 )
+  + LAYER Metal2 ( 0 8828 ) ( 200 10878 )
+  + LAYER Metal2 ( 0 6122 ) ( 200 8172 )
+  + LAYER Metal2 ( 0 3752 ) ( 200 5802 )
+  + LAYER Metal2 ( 0 1272 ) ( 200 3172 )
+  + FIXED ( 0 0 ) N ;
+- reset_PU + NET reset_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 34731 ) ( 200 34807 )
+  + FIXED ( 0 0 ) N ;
+- reset_PD + NET reset_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 33858 ) ( 200 33934 )
+  + FIXED ( 0 0 ) N ;
+- reset + NET reset + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 21752 ) ( 200 21828 )
+  + FIXED ( 0 0 ) N ;
+- clk_PU + NET clk_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 54731 ) ( 200 54807 )
+  + FIXED ( 0 0 ) N ;
+- clk_PD + NET clk_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 53858 ) ( 200 53934 )
+  + FIXED ( 0 0 ) N ;
+- clk + NET clk + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 41752 ) ( 200 41828 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_CS + NET uart_rx_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 75252 ) ( 200 75328 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_SL + NET uart_rx_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 62190 ) ( 200 62266 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_IE + NET uart_rx_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 73647 ) ( 200 73723 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_OE + NET uart_rx_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 61898 ) ( 200 61974 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_PU + NET uart_rx_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 74731 ) ( 200 74807 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_PD + NET uart_rx_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 73858 ) ( 200 73934 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_OUT + NET uart_rx_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 62044 ) ( 200 62120 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_PDRV0 + NET uart_rx_PDRV0 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 74502 ) ( 200 74578 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_PDRV1 + NET uart_rx_PDRV1 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 74360 ) ( 200 74436 )
+  + FIXED ( 0 0 ) N ;
+- uart_rx_IN + NET uart_rx_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 61752 ) ( 200 61828 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_CS + NET spi_miso_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 95252 ) ( 200 95328 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_SL + NET spi_miso_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 82190 ) ( 200 82266 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_IE + NET spi_miso_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 93647 ) ( 200 93723 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_OE + NET spi_miso_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 81898 ) ( 200 81974 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_PU + NET spi_miso_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 94731 ) ( 200 94807 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_PD + NET spi_miso_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 93858 ) ( 200 93934 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_OUT + NET spi_miso_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 82044 ) ( 200 82120 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_PDRV0 + NET spi_miso_PDRV0 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 94502 ) ( 200 94578 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_PDRV1 + NET spi_miso_PDRV1 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 94360 ) ( 200 94436 )
+  + FIXED ( 0 0 ) N ;
+- spi_miso_IN + NET spi_miso_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 81752 ) ( 200 81828 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_CS + NET spi_data0_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 115252 ) ( 200 115328 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_SL + NET spi_data0_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 102190 ) ( 200 102266 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_IE + NET spi_data0_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 113647 ) ( 200 113723 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_OE + NET spi_data0_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 101898 ) ( 200 101974 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_PU + NET spi_data0_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 114731 ) ( 200 114807 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_PD + NET spi_data0_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 113858 ) ( 200 113934 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_OUT + NET spi_data0_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 102044 ) ( 200 102120 )
+  + FIXED ( 0 0 ) N ;
+- spi_data0_IN + NET spi_data0_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 101752 ) ( 200 101828 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_CS + NET spi_data1_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 135252 ) ( 200 135328 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_SL + NET spi_data1_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 122190 ) ( 200 122266 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_IE + NET spi_data1_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 133647 ) ( 200 133723 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_OE + NET spi_data1_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 121898 ) ( 200 121974 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_PU + NET spi_data1_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 134731 ) ( 200 134807 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_PD + NET spi_data1_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 133858 ) ( 200 133934 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_OUT + NET spi_data1_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 122044 ) ( 200 122120 )
+  + FIXED ( 0 0 ) N ;
+- spi_data1_IN + NET spi_data1_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 121752 ) ( 200 121828 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_CS + NET spi_data2_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 155252 ) ( 200 155328 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_SL + NET spi_data2_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 142190 ) ( 200 142266 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_IE + NET spi_data2_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 153647 ) ( 200 153723 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_OE + NET spi_data2_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 141898 ) ( 200 141974 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_PU + NET spi_data2_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 154731 ) ( 200 154807 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_PD + NET spi_data2_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 153858 ) ( 200 153934 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_OUT + NET spi_data2_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 142044 ) ( 200 142120 )
+  + FIXED ( 0 0 ) N ;
+- spi_data2_IN + NET spi_data2_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 141752 ) ( 200 141828 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_CS + NET spi_data3_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 175252 ) ( 200 175328 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_SL + NET spi_data3_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 162190 ) ( 200 162266 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_IE + NET spi_data3_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 173647 ) ( 200 173723 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_OE + NET spi_data3_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 161898 ) ( 200 161974 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_PU + NET spi_data3_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 174731 ) ( 200 174807 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_PD + NET spi_data3_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 173858 ) ( 200 173934 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_OUT + NET spi_data3_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 162044 ) ( 200 162120 )
+  + FIXED ( 0 0 ) N ;
+- spi_data3_IN + NET spi_data3_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 161752 ) ( 200 161828 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_CS + NET spi_clk_out_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 195252 ) ( 200 195328 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_SL + NET spi_clk_out_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 182190 ) ( 200 182266 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_IE + NET spi_clk_out_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 193647 ) ( 200 193723 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_OE + NET spi_clk_out_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 181898 ) ( 200 181974 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_PU + NET spi_clk_out_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 194731 ) ( 200 194807 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_PD + NET spi_clk_out_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 193858 ) ( 200 193934 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_OUT + NET spi_clk_out_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 182044 ) ( 200 182120 )
+  + FIXED ( 0 0 ) N ;
+- spi_clk_out_IN + NET spi_clk_out_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 181752 ) ( 200 181828 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_CS + NET spi_flash_select_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 215252 ) ( 200 215328 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_SL + NET spi_flash_select_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 202190 ) ( 200 202266 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_IE + NET spi_flash_select_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 213647 ) ( 200 213723 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_OE + NET spi_flash_select_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 201898 ) ( 200 201974 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_PU + NET spi_flash_select_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 214731 ) ( 200 214807 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_PD + NET spi_flash_select_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 213858 ) ( 200 213934 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_OUT + NET spi_flash_select_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 202044 ) ( 200 202120 )
+  + FIXED ( 0 0 ) N ;
+- spi_flash_select_IN + NET spi_flash_select_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 201752 ) ( 200 201828 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_CS + NET spi_ram_a_select_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 20252 221800 ) ( 20328 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_SL + NET spi_ram_a_select_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 7190 221800 ) ( 7266 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_IE + NET spi_ram_a_select_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 18647 221800 ) ( 18723 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_OE + NET spi_ram_a_select_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 6898 221800 ) ( 6974 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_PU + NET spi_ram_a_select_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 19731 221800 ) ( 19807 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_PD + NET spi_ram_a_select_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 18858 221800 ) ( 18934 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_OUT + NET spi_ram_a_select_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 7044 221800 ) ( 7120 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_ram_a_select_IN + NET spi_ram_a_select_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 6752 221800 ) ( 6828 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_CS + NET uart_tx_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 40252 221800 ) ( 40328 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_SL + NET uart_tx_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 27190 221800 ) ( 27266 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_IE + NET uart_tx_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 38647 221800 ) ( 38723 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_OE + NET uart_tx_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 26898 221800 ) ( 26974 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_PU + NET uart_tx_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 39731 221800 ) ( 39807 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_PD + NET uart_tx_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 38858 221800 ) ( 38934 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_OUT + NET uart_tx_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 27044 221800 ) ( 27120 222000 )
+  + FIXED ( 0 0 ) N ;
+- uart_tx_IN + NET uart_tx_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 26752 221800 ) ( 26828 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_CS + NET spi_select_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 60252 221800 ) ( 60328 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_SL + NET spi_select_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 47190 221800 ) ( 47266 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_IE + NET spi_select_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 58647 221800 ) ( 58723 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_OE + NET spi_select_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 46898 221800 ) ( 46974 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_PU + NET spi_select_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 59731 221800 ) ( 59807 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_PD + NET spi_select_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 58858 221800 ) ( 58934 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_OUT + NET spi_select_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 47044 221800 ) ( 47120 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_select_IN + NET spi_select_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 46752 221800 ) ( 46828 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_CS + NET disp_spi_clk_out_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 80252 221800 ) ( 80328 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_SL + NET disp_spi_clk_out_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 67190 221800 ) ( 67266 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_IE + NET disp_spi_clk_out_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 78647 221800 ) ( 78723 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_OE + NET disp_spi_clk_out_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 66898 221800 ) ( 66974 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_PU + NET disp_spi_clk_out_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 79731 221800 ) ( 79807 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_PD + NET disp_spi_clk_out_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 78858 221800 ) ( 78934 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_OUT + NET disp_spi_clk_out_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 67044 221800 ) ( 67120 222000 )
+  + FIXED ( 0 0 ) N ;
+- disp_spi_clk_out_IN + NET disp_spi_clk_out_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 66752 221800 ) ( 66828 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_CS + NET spi_mosi_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 100252 221800 ) ( 100328 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_SL + NET spi_mosi_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 87190 221800 ) ( 87266 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_IE + NET spi_mosi_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 98647 221800 ) ( 98723 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_OE + NET spi_mosi_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 86898 221800 ) ( 86974 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_PU + NET spi_mosi_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 99731 221800 ) ( 99807 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_PD + NET spi_mosi_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 98858 221800 ) ( 98934 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_OUT + NET spi_mosi_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 87044 221800 ) ( 87120 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_mosi_IN + NET spi_mosi_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 86752 221800 ) ( 86828 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_CS + NET spi_dc_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 120252 221800 ) ( 120328 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_SL + NET spi_dc_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 107190 221800 ) ( 107266 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_IE + NET spi_dc_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 118647 221800 ) ( 118723 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_OE + NET spi_dc_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 106898 221800 ) ( 106974 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_PU + NET spi_dc_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 119731 221800 ) ( 119807 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_PD + NET spi_dc_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 118858 221800 ) ( 118934 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_OUT + NET spi_dc_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 107044 221800 ) ( 107120 222000 )
+  + FIXED ( 0 0 ) N ;
+- spi_dc_IN + NET spi_dc_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 106752 221800 ) ( 106828 222000 )
+  + FIXED ( 0 0 ) N ;
+- VDD + NET VDD + DIRECTION INOUT + USE POWER
+  + LAYER Metal2 ( 138828 221800 ) ( 140728 222000 )
+  + LAYER Metal2 ( 136198 221800 ) ( 138248 222000 )
+  + LAYER Metal2 ( 133828 221800 ) ( 135878 222000 )
+  + LAYER Metal2 ( 131122 221800 ) ( 133172 222000 )
+  + LAYER Metal2 ( 128752 221800 ) ( 130802 222000 )
+  + LAYER Metal2 ( 126272 221800 ) ( 128172 222000 )
+  + FIXED ( 0 0 ) N ;
+END PINS
+END DESIGN
