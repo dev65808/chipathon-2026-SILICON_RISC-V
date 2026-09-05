@@ -6,6 +6,8 @@
   - **QSPI Flash and RAM as Reusable IP**: When designing small RISC-V cores, adding SRAM for instruction and data is usually not practical. Instead, accessing an extrnal FLASH and RAM through a QSPI protocol is a great choice is speed is not an issue. Although there are few RISCV in the open-source community, they are embedded in designs which makes it diffcult for designers to drop it in their design as an _reusable IP_. The aim of this project is to create such an resuable IP.
   - **UART and SPI as Reusable IP**: UART and SPI allows a RISCV core to interact with external world and create a tiny microcontroller-type device. The UART can be used to interact with a terminla and SPI display can be used as the monitor.
 
+# Project Description
+
 ---
 ---
 - [Original README for this repo template](docs/repo-README.md)
