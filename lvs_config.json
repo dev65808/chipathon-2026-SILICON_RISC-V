@@ -10,7 +10,7 @@
     "LVS_FLATTEN": [],
     "LVS_NOFLATTEN": [],
     "LVS_IGNORE": [],
-    "LVS_SPICE_FILES": ["$UPRJ_ROOT/gds/qspi_chip_top.spice"],
+    "LVS_SPICE_FILES": [],
     "LVS_VERILOG_FILES": ["$UPRJ_ROOT/gds/qspi_chip_top.pnl.v"],
     "LAYOUT_FILE": "$UPRJ_ROOT/gds/qspi_chip_top.gds"
 }
