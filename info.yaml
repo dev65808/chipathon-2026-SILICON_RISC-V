@@ -15,7 +15,54 @@ project:
   discord: ""
   description: "The project aims to design and implement a basic 32-bit RISC-V processor compliant with the RV32I base instruction set. TL-Verilog (TLV) from Redwood EDA will be used to develop the RISC-V core. TLV's transaction-level modeling and timing abstraction will enable for faster development and better architectural insight."
   lvs_config: "lvs_config.json"
+  gf_def_ready: true            # data ready for def generation with global foundries' pad frame
+  ws_def_ready: false            # data ready for def generation with wafer space pad frame
+  drc_ready: true               # data ready for integration and DRC
+  lvs_ready: true               # data ready for integrated LVS
 
+# There are 7 i/o pin types and the associated connections from the user area to the i/o pad cell
+# all control signals must be connected
+# ground: 
+#   <name> connects to DVSS
+# power: 
+#   <name> connects to DVDD
+# input_cmos: digital input with no hysteresis
+#   <name> connects to Y
+#   control pins:
+#     <name_PD>: connects to PD. weak pull down when enabled
+#     <name_PU>: connects to PU. weak pull up when enabled
+# input_schmitt: digital input with hysteresis
+#   <name> connects to Y
+#   control pins:
+#     <name_PD>: connects to PD. weak pull down when enabled
+#     <name_PU>: connects to PU. weak pull up when enabled
+# bidirectional: programmable drive strength PDRV[1:0] - 00: 4mA, 01: 8mA, 10: 12mA, 11: 16mA
+#   <name>_IN connects to Y
+#   <name>_OUT connects to A
+#   control pins:
+#     <name_PD>: connects to PD. weak pull down when enabled
+#     <name_PU>: connects to PU. weak pull up when enabled
+#     <name_CS>: input type - low is cmos buffer, high is schmitt trigger
+#     <name_SL>: output slew rate - low is fast, high is slow
+#     <name_IE>: input enable - high for input PAD -> Y
+#     <name_OE>: output enable - high for output A -> PAD
+#     <name_PDRV0>: drive strength lsb
+#     <name_PDRV1>: drive strength msb
+# bidirectional_24ma: fixed drive strength 24mA
+#   <name>_IN connects to Y
+#   <name>_OUT connects to A
+#   control pins:
+#     <name_PD>: connects to PD. weak pull down when enabled
+#     <name_PU>: connects to PU. weak pull up when enabled
+#     <name_CS>: input type - low is cmos buffer, high is schmitt trigger
+#     <name_SL>: output slew rate - low is fast, high is slow
+#     <name_IE>: input enable - high for input PAD -> Y
+#     <name_OE>: output enable - high for output A -> PAD
+# analog:
+#   <name> connects to ASIG5V
+#   Note: secondary_esd flag is ignored
+
+  
 pins:
   - name: VSS
     io_type: ground  # the first pin must be a ground connection -- chip ground, not a qspi_chip_top.sv port; name matches uppercase GDS label
