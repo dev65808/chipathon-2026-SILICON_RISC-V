@@ -32,6 +32,7 @@ RV32I core + QSPI + UART chip, targeting the GF180MCU process (Chipathon 2026, T
 | `uart_tx.v` / `uart_rx.v` | UART transmit and receive shift-register logic. |
 | `latch_reg.v` | Latch-based register used in one of the peripheral/interface paths. |
 | `pseudo_rand_stub.sv` | Pseudo-random stimulus/stub module, used in verification. |
+| `docs/test_plan.md` | **Post-Silicon Test Plan** |
 
 Standard cell library used for all synthesis/place-and-route: `gf180mcu_fd_sc_mcu7t5v0`.
 
